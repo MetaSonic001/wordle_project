@@ -11,13 +11,22 @@ body {
     align-items: center; /* Center vertically */
 }
 
-/* Style for form container */
-form {
+/* Container styles */
+.container {
     max-width: 400px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+
+}
+
+/* Title styles */
+h1 {
+    font-size: 28px;
+    color: #333; /* Darken the color for better contrast */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Style for form inputs and labels */
@@ -45,4 +54,19 @@ form button[type="submit"] {
 .error-message {
     color: red;
     margin-top: 5px;
+}
+
+/* Rules paragraph styles */
+.rules p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.rules a {
+    color: #007bff; /* Match the link color with the button color */
+    text-decoration: none;
+}
+
+.rules a:hover {
+    text-decoration: underline;
 }

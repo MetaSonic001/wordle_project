@@ -19,8 +19,9 @@ from wordle_game import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),  # Added 'name' attribute
-    path('Rules', views.rules),
+    path('home', views.home, name='home'),  # Added 'name' attribute
+    path('rules/', views.rules, name='rules'),
     path('signup/', views.signup, name='signup'),
     path('login/', views.user_login, name='login'),
+    path('', views.user_login),
 ]

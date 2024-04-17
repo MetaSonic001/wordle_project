@@ -2,20 +2,25 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
-        <link rel="stylesheet" href="{% static 'login_style.css' %}">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'login_style.css' %}">
+</head>
 <body>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-        <p>If you don't have an account, <a href="{% url 'signup' %}">register here</a>.</p>
-
-    </form>
     
+    <div class="container">
+        <h1>Welcome to Wordle</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+            <p>If you don't have an account, <a href="{% url 'signup' %}">register here</a>.</p>
+        </form>
+        <div class="rules">
+            <p>Check out the rules <a href="{% url 'rules' %}">here</a>.</p>
+        </div>   
+    </div>
 </body>
 </html>
