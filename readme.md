@@ -28,5 +28,3 @@ To run this project locally, follow these steps:
 ## Credits
 This project was created by Shaun Mendes, Gayatri Nadar and Bhakti from SE COMPS A.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
